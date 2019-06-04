@@ -94,8 +94,9 @@ namespace SDRHackBox
                 if (!ready) return;
 
                 long ds = ms * trkBarDelay.Value * 30;
-                long rt = ds * 30 / 100; // 30% randomization
-                long ev = ms * 100;
+                int rt = trkBarDelay.Value * 10; // 30% randomization
+                long evt = ms * 100;
+                long ev = 0;
                 long st = 0;
 
                 double[] freqs = new double[txtMemories.Lines.Count()];
@@ -147,7 +148,7 @@ namespace SDRHackBox
 
                         if (chkRandomTiming.Checked)
                         {
-                            st = tm + ds + random.Next(0, (int)rt);
+                            st = tm + ds + random.Next(0, rt) * ms;
                         }
                         else
                             st = tm + ds;
@@ -157,7 +158,8 @@ namespace SDRHackBox
                     {
                         Application.DoEvents();
                         ds = ms * trkBarDelay.Value * 30;
-                        ev = tm + ds;
+                        rt = rt = trkBarDelay.Value * 10; // 30% randomization
+                        ev = tm + evt;
                     }
 
                 }
@@ -198,8 +200,9 @@ namespace SDRHackBox
                 sweepscanning = true;
 
                 long ds = ms * trkBarDelay.Value * 30;
-                long rt = ds * 30 / 100; // 30% randomization
-                long ev = ms * 100;
+                int rt = trkBarDelay.Value * 10; // 30% randomization
+                long evt = ms * 100;
+                long ev = 0;
                 long st = 0;
                 double f;
 
@@ -208,23 +211,7 @@ namespace SDRHackBox
                 try
                 {
                     start = Convert.ToDouble(txtStartFreq.Text) * 1e6;
-                }
-                catch
-                {
-                    return;
-                }
-
-                try
-                {
                     stop = Convert.ToDouble(txtStopFreq.Text) * 1e6;
-                }
-                catch
-                {
-                    return;
-                }
-
-                try
-                {
                     step = Convert.ToDouble(txtStepFreq.Text) * 1e6;
                 }
                 catch
@@ -255,7 +242,7 @@ namespace SDRHackBox
 
                         if (chkRandomTiming.Checked)
                         {
-                            st = tm + ds + random.Next(0, (int)rt);
+                            st = tm + ds + random.Next(0, rt) * ms;
                         }
                         else
                             st = tm + ds;
@@ -265,9 +252,9 @@ namespace SDRHackBox
                     {
                         Application.DoEvents();
                         ds = ms * trkBarDelay.Value * 30;
-                        ev = tm + ds;
+                        rt = trkBarDelay.Value * 10; // 30% randomization
+                        ev = tm + evt;
                     }
-
                 }
                 sw.Stop();
             }
@@ -278,6 +265,5 @@ namespace SDRHackBox
                 btnSweepScan.Text = "Start Sweep Scan";
             }
         }
-
     }
 }
