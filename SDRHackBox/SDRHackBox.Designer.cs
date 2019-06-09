@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SDRHackBox));
             this.btnConnect = new System.Windows.Forms.Button();
             this.txtMemories = new System.Windows.Forms.TextBox();
             this.txtStepFreq = new System.Windows.Forms.TextBox();
@@ -54,9 +55,10 @@
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(99, 12);
+            this.btnConnect.Location = new System.Drawing.Point(132, 15);
+            this.btnConnect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(120, 50);
+            this.btnConnect.Size = new System.Drawing.Size(160, 62);
             this.btnConnect.TabIndex = 0;
             this.btnConnect.Text = "Connect SDR#";
             this.btnConnect.UseVisualStyleBackColor = true;
@@ -64,34 +66,38 @@
             // 
             // txtMemories
             // 
-            this.txtMemories.Location = new System.Drawing.Point(6, 19);
+            this.txtMemories.Location = new System.Drawing.Point(8, 23);
+            this.txtMemories.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMemories.Multiline = true;
             this.txtMemories.Name = "txtMemories";
             this.txtMemories.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtMemories.Size = new System.Drawing.Size(120, 213);
+            this.txtMemories.Size = new System.Drawing.Size(159, 261);
             this.txtMemories.TabIndex = 0;
             // 
             // txtStepFreq
             // 
-            this.txtStepFreq.Location = new System.Drawing.Point(42, 70);
+            this.txtStepFreq.Location = new System.Drawing.Point(56, 86);
+            this.txtStepFreq.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtStepFreq.Name = "txtStepFreq";
-            this.txtStepFreq.Size = new System.Drawing.Size(45, 20);
+            this.txtStepFreq.Size = new System.Drawing.Size(59, 22);
             this.txtStepFreq.TabIndex = 2;
             // 
             // lblStep
             // 
             this.lblStep.AutoSize = true;
-            this.lblStep.Location = new System.Drawing.Point(7, 73);
+            this.lblStep.Location = new System.Drawing.Point(9, 90);
+            this.lblStep.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStep.Name = "lblStep";
-            this.lblStep.Size = new System.Drawing.Size(29, 13);
+            this.lblStep.Size = new System.Drawing.Size(37, 17);
             this.lblStep.TabIndex = 5;
             this.lblStep.Text = "Step";
             // 
             // btnMemoryScan
             // 
-            this.btnMemoryScan.Location = new System.Drawing.Point(6, 261);
+            this.btnMemoryScan.Location = new System.Drawing.Point(8, 321);
+            this.btnMemoryScan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMemoryScan.Name = "btnMemoryScan";
-            this.btnMemoryScan.Size = new System.Drawing.Size(120, 50);
+            this.btnMemoryScan.Size = new System.Drawing.Size(160, 62);
             this.btnMemoryScan.TabIndex = 1;
             this.btnMemoryScan.Text = "Start Memory Scan";
             this.btnMemoryScan.UseVisualStyleBackColor = true;
@@ -102,9 +108,11 @@
             this.grpBoxMemoryScan.Controls.Add(this.chkRandom);
             this.grpBoxMemoryScan.Controls.Add(this.txtMemories);
             this.grpBoxMemoryScan.Controls.Add(this.btnMemoryScan);
-            this.grpBoxMemoryScan.Location = new System.Drawing.Point(12, 68);
+            this.grpBoxMemoryScan.Location = new System.Drawing.Point(16, 84);
+            this.grpBoxMemoryScan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpBoxMemoryScan.Name = "grpBoxMemoryScan";
-            this.grpBoxMemoryScan.Size = new System.Drawing.Size(131, 324);
+            this.grpBoxMemoryScan.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpBoxMemoryScan.Size = new System.Drawing.Size(175, 399);
             this.grpBoxMemoryScan.TabIndex = 1;
             this.grpBoxMemoryScan.TabStop = false;
             this.grpBoxMemoryScan.Text = "Memory Scan";
@@ -112,9 +120,10 @@
             // chkRandom
             // 
             this.chkRandom.AutoSize = true;
-            this.chkRandom.Location = new System.Drawing.Point(6, 238);
+            this.chkRandom.Location = new System.Drawing.Point(8, 293);
+            this.chkRandom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkRandom.Name = "chkRandom";
-            this.chkRandom.Size = new System.Drawing.Size(108, 17);
+            this.chkRandom.Size = new System.Drawing.Size(139, 21);
             this.chkRandom.TabIndex = 2;
             this.chkRandom.TabStop = false;
             this.chkRandom.Text = "Random Channel";
@@ -129,18 +138,21 @@
             this.grpBoxSweepScan.Controls.Add(this.txtStartFreq);
             this.grpBoxSweepScan.Controls.Add(this.txtStepFreq);
             this.grpBoxSweepScan.Controls.Add(this.lblStep);
-            this.grpBoxSweepScan.Location = new System.Drawing.Point(159, 68);
+            this.grpBoxSweepScan.Location = new System.Drawing.Point(212, 84);
+            this.grpBoxSweepScan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpBoxSweepScan.Name = "grpBoxSweepScan";
-            this.grpBoxSweepScan.Size = new System.Drawing.Size(150, 159);
+            this.grpBoxSweepScan.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpBoxSweepScan.Size = new System.Drawing.Size(200, 196);
             this.grpBoxSweepScan.TabIndex = 2;
             this.grpBoxSweepScan.TabStop = false;
             this.grpBoxSweepScan.Text = "Sweep Scan";
             // 
             // btnSweepScan
             // 
-            this.btnSweepScan.Location = new System.Drawing.Point(10, 96);
+            this.btnSweepScan.Location = new System.Drawing.Point(13, 118);
+            this.btnSweepScan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSweepScan.Name = "btnSweepScan";
-            this.btnSweepScan.Size = new System.Drawing.Size(120, 50);
+            this.btnSweepScan.Size = new System.Drawing.Size(160, 62);
             this.btnSweepScan.TabIndex = 3;
             this.btnSweepScan.Text = "Start Sweep Scan";
             this.btnSweepScan.UseVisualStyleBackColor = true;
@@ -149,42 +161,47 @@
             // lblStop
             // 
             this.lblStop.AutoSize = true;
-            this.lblStop.Location = new System.Drawing.Point(7, 48);
+            this.lblStop.Location = new System.Drawing.Point(9, 59);
+            this.lblStop.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStop.Name = "lblStop";
-            this.lblStop.Size = new System.Drawing.Size(29, 13);
+            this.lblStop.Size = new System.Drawing.Size(37, 17);
             this.lblStop.TabIndex = 9;
             this.lblStop.Text = "Stop";
             // 
             // txtStopFreq
             // 
-            this.txtStopFreq.Location = new System.Drawing.Point(42, 45);
+            this.txtStopFreq.Location = new System.Drawing.Point(56, 55);
+            this.txtStopFreq.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtStopFreq.Name = "txtStopFreq";
-            this.txtStopFreq.Size = new System.Drawing.Size(100, 20);
+            this.txtStopFreq.Size = new System.Drawing.Size(132, 22);
             this.txtStopFreq.TabIndex = 1;
             // 
             // lblStart
             // 
             this.lblStart.AutoSize = true;
-            this.lblStart.Location = new System.Drawing.Point(7, 22);
+            this.lblStart.Location = new System.Drawing.Point(9, 27);
+            this.lblStart.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStart.Name = "lblStart";
-            this.lblStart.Size = new System.Drawing.Size(29, 13);
+            this.lblStart.Size = new System.Drawing.Size(38, 17);
             this.lblStart.TabIndex = 9;
             this.lblStart.Text = "Start";
             // 
             // txtStartFreq
             // 
-            this.txtStartFreq.Location = new System.Drawing.Point(42, 19);
+            this.txtStartFreq.Location = new System.Drawing.Point(56, 23);
+            this.txtStartFreq.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtStartFreq.Name = "txtStartFreq";
-            this.txtStartFreq.Size = new System.Drawing.Size(100, 20);
+            this.txtStartFreq.Size = new System.Drawing.Size(132, 22);
             this.txtStartFreq.TabIndex = 0;
             // 
             // trkBarDelay
             // 
-            this.trkBarDelay.Location = new System.Drawing.Point(206, 255);
+            this.trkBarDelay.Location = new System.Drawing.Point(275, 314);
+            this.trkBarDelay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trkBarDelay.Maximum = 20;
             this.trkBarDelay.Minimum = 1;
             this.trkBarDelay.Name = "trkBarDelay";
-            this.trkBarDelay.Size = new System.Drawing.Size(104, 45);
+            this.trkBarDelay.Size = new System.Drawing.Size(139, 56);
             this.trkBarDelay.TabIndex = 9;
             this.trkBarDelay.TabStop = false;
             this.trkBarDelay.Value = 10;
@@ -192,9 +209,10 @@
             // lblDelay
             // 
             this.lblDelay.AutoSize = true;
-            this.lblDelay.Location = new System.Drawing.Point(161, 255);
+            this.lblDelay.Location = new System.Drawing.Point(215, 314);
+            this.lblDelay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDelay.Name = "lblDelay";
-            this.lblDelay.Size = new System.Drawing.Size(34, 13);
+            this.lblDelay.Size = new System.Drawing.Size(44, 17);
             this.lblDelay.TabIndex = 10;
             this.lblDelay.Text = "Delay";
             // 
@@ -208,18 +226,20 @@
             "NFM",
             "LSB",
             "USB"});
-            this.cmbMode.Location = new System.Drawing.Point(206, 306);
+            this.cmbMode.Location = new System.Drawing.Point(275, 377);
+            this.cmbMode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbMode.Name = "cmbMode";
-            this.cmbMode.Size = new System.Drawing.Size(61, 21);
+            this.cmbMode.Size = new System.Drawing.Size(80, 24);
             this.cmbMode.TabIndex = 11;
             this.cmbMode.TabStop = false;
             // 
             // lblMode
             // 
             this.lblMode.AutoSize = true;
-            this.lblMode.Location = new System.Drawing.Point(161, 309);
+            this.lblMode.Location = new System.Drawing.Point(215, 380);
+            this.lblMode.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMode.Name = "lblMode";
-            this.lblMode.Size = new System.Drawing.Size(34, 13);
+            this.lblMode.Size = new System.Drawing.Size(43, 17);
             this.lblMode.TabIndex = 12;
             this.lblMode.Text = "Mode";
             // 
@@ -227,27 +247,29 @@
             // 
             this.lblFrequency.AutoSize = true;
             this.lblFrequency.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFrequency.Location = new System.Drawing.Point(165, 340);
+            this.lblFrequency.Location = new System.Drawing.Point(220, 418);
+            this.lblFrequency.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFrequency.Name = "lblFrequency";
-            this.lblFrequency.Size = new System.Drawing.Size(79, 24);
+            this.lblFrequency.Size = new System.Drawing.Size(99, 29);
             this.lblFrequency.TabIndex = 13;
             this.lblFrequency.Text = "0.0 MHz";
             // 
             // chkRandomTiming
             // 
             this.chkRandomTiming.AutoSize = true;
-            this.chkRandomTiming.Location = new System.Drawing.Point(175, 371);
+            this.chkRandomTiming.Location = new System.Drawing.Point(233, 457);
+            this.chkRandomTiming.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkRandomTiming.Name = "chkRandomTiming";
-            this.chkRandomTiming.Size = new System.Drawing.Size(100, 17);
+            this.chkRandomTiming.Size = new System.Drawing.Size(129, 21);
             this.chkRandomTiming.TabIndex = 14;
             this.chkRandomTiming.Text = "Random Timing";
             this.chkRandomTiming.UseVisualStyleBackColor = true;
             // 
             // SDRHackBox
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(319, 396);
+            this.ClientSize = new System.Drawing.Size(425, 487);
             this.Controls.Add(this.chkRandomTiming);
             this.Controls.Add(this.lblFrequency);
             this.Controls.Add(this.lblMode);
@@ -258,9 +280,11 @@
             this.Controls.Add(this.grpBoxMemoryScan);
             this.Controls.Add(this.btnConnect);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "SDRHackBox";
-            this.Text = "SDR HackBox";
+            this.Text = "SDR HackBox v1.2";
             this.grpBoxMemoryScan.ResumeLayout(false);
             this.grpBoxMemoryScan.PerformLayout();
             this.grpBoxSweepScan.ResumeLayout(false);

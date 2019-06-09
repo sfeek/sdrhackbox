@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("SDRHackBox")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Ghost Hack Box for SDR#")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Geek's Haven Labs")]
 [assembly: AssemblyProduct("SDRHackBox")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
