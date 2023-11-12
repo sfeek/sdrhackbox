@@ -114,3 +114,10 @@ C:\SourceCode\SDRHackBox\SDRHackBox\obj\Debug\SDRHackBox.application
 C:\SourceCode\SDRHackBox\SDRHackBox\obj\Debug\SDRHackBox.csproj.CopyComplete
 C:\SourceCode\SDRHackBox\SDRHackBox\obj\Debug\SDRHackBox.exe
 C:\SourceCode\SDRHackBox\SDRHackBox\obj\Debug\SDRHackBox.pdb
+D:\Source Code\sdrhackbox\SDRHackBox\obj\Debug\SDRHackBox.csproj.AssemblyReference.cache
+D:\Source Code\sdrhackbox\SDRHackBox\obj\Debug\SDRHackBox.Properties.Resources.resources
+D:\Source Code\sdrhackbox\SDRHackBox\obj\Debug\SDRHackBox.SDRHackBox.resources
+D:\Source Code\sdrhackbox\SDRHackBox\obj\Debug\SDRHackBox.csproj.GenerateResource.cache
+D:\Source Code\sdrhackbox\SDRHackBox\obj\Debug\SDRHackBox.csproj.CoreCompileInputs.cache
+D:\Source Code\sdrhackbox\SDRHackBox\obj\Debug\SDRHackBox.exe
+D:\Source Code\sdrhackbox\SDRHackBox\obj\Debug\SDRHackBox.pdb

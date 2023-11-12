@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="SDRHackBox.exe" version="1.2.0.0" publicKeyToken="58e420b1eb5badae" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="images_DZW_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="SDRHackBox" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="SDRHackBox.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LiteGuard.dll" size="5120">
+      <assemblyIdentity name="LiteGuard" version="2.2.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>aaku1WuMN2gHn4i3dPvE/8PzeA4Tdk2yp4lvzZzxBS8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PrimS.Telnet.NetStandard.dll" size="24576">
+      <assemblyIdentity name="PrimS.Telnet.NetStandard" version="0.8.3.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>IsS+IA5kMwV9zCVKaz8ITtjVIA6CiT0a+MhoGlIUmyg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SDRHackBox.exe" size="53232">
+      <assemblyIdentity name="SDRHackBox" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>s9KSM2UVgVVaYii2o+uCYPfjfO93GKdWxru90Jl+TqY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="images_DZW_icon.ico" size="16958">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IzUFGDOzObgyj64QG6vr1Bez+dTlOunVMoHLxTSJS6U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="License.txt" size="1111">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mK02h/4wCSU1KsJfnwVSKneGOsKCd379CPWH9XDL+0s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SDRHackBox.exe.config" size="184">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FihlZtVNgcNyH37Pf0Jtll3jZOm+L55ijXNjtoS2/mo=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=STRUCTURETEC\shane.feek" issuerKeyHash="f5d04c02b015cf753f8228d4f1f737cc2cc1a879" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>qzeGAAjN/6dyy4GFML/uGzTvlRjPQBe6qvi6oFN+ar4=</DigestValue></Reference></SignedInfo><SignatureValue>hD9i4vniFYAhkrDkr4ERYmMH1UeIwaEDvMBgtzIR+RHM0Y4PNt/vy9ZjehLUtcLDgtnhnOW/N6HMAVXdZsHJztcUrLs45VI01MkfToVZRR7tbB1nk4/nmgisvIce3KkRlVxmTDSsUOfNwjerhAKUu+VfTmPkNprHV7l7hsj2g5k=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>y7xHk3uu86E/idTwYaGmu7kZa2OxGkDYyxpjWnA/Ik4QikLa0JjDfM2gh9J+LAvPzLckZbGBAbTOMFyLCs3HQ1J1baUP+wzWUihsz75Y6RX+uXwfY6dNEqKPlDYx/+mdghMvha7Smyr3i/WEUmXzxE7ty+vbcBO5Vxg3jF9tY0k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="be6a7e53a0baf8aaba1740cf1895ef341beebf308581cb72a7ffcd08008637ab" Description="" Url=""><as:assemblyIdentity name="SDRHackBox.exe" version="1.2.0.0" publicKeyToken="58e420b1eb5badae" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=STRUCTURETEC\shane.feek</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>LyBuzQvio+zdXeBpVRAFgGEg3TBQalciQAxCo3+W20o=</DigestValue></Reference></SignedInfo><SignatureValue>N0n12tTEazDun16yaB/5F6v9OCgOnvXo9qNk7aisLwxqvo9VhdWXAnanxwC/nEasCgtAfRBYoOzmVTRaf20fFO+Agd97ppZwThsWLI8rfJ/1tOMOHxjwvqVYzRoE97PT3/G+D74J+O2MztWtzCk2YJovf5YnxBwmZTBVbySck48=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>y7xHk3uu86E/idTwYaGmu7kZa2OxGkDYyxpjWnA/Ik4QikLa0JjDfM2gh9J+LAvPzLckZbGBAbTOMFyLCs3HQ1J1baUP+wzWUihsz75Y6RX+uXwfY6dNEqKPlDYx/+mdghMvha7Smyr3i/WEUmXzxE7ty+vbcBO5Vxg3jF9tY0k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB9TCCAV6gAwIBAgIQHqjEI0h29ZpEZx8UQ8RP9jANBgkqhkiG9w0BAQsFADA5MTcwNQYDVQQDHi4AUwBUAFIAVQBDAFQAVQBSAEUAVABFAEMAXABzAGgAYQBuAGUALgBmAGUAZQBrMB4XDTIzMTExMjE0MTk1NFoXDTI0MTExMTIwMTk1NFowOTE3MDUGA1UEAx4uAFMAVABSAFUAQwBUAFUAUgBFAFQARQBDAFwAcwBoAGEAbgBlAC4AZgBlAGUAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAy7xHk3uu86E/idTwYaGmu7kZa2OxGkDYyxpjWnA/Ik4QikLa0JjDfM2gh9J+LAvPzLckZbGBAbTOMFyLCs3HQ1J1baUP+wzWUihsz75Y6RX+uXwfY6dNEqKPlDYx/+mdghMvha7Smyr3i/WEUmXzxE7ty+vbcBO5Vxg3jF9tY0kCAwEAATANBgkqhkiG9w0BAQsFAAOBgQClJWTjPnOs90Xw/Pq1tVcxgSan6GSagRYhL/ZfE6ibV21Sq0SA+lj8VB5/Q+0Cou4AzcVBlqyBd3y+L2GXx2ugE/lwQHinPwVqUuCm4alzqusWl0kULKBTYiK60S871MF5ZqcIFEVsqxazVOtULpbz8iocqHZah34//iugB5cquQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
